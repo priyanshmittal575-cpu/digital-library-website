@@ -1,0 +1,99 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f7f9;
+  color: #1e293b;
+}
+
+.container { width: 92%; max-width: 1060px; margin: 0 auto; }
+
+.topbar {
+  background: #14532d;
+  color: #fff;
+  padding: 28px 0;
+  margin-bottom: 24px;
+}
+
+.topbar h1 { font-size: 1.55rem; }
+.topbar p { color: #bbf7d0; font-size: 0.92rem; margin-top: 4px; }
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.controls input {
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.subject-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.subject-pills button {
+  padding: 6px 14px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.subject-pills button.active {
+  background: #15803d;
+  color: #fff;
+  border-color: #15803d;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+.res-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.res-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  margin-bottom: 8px;
+}
+
+.sub-tag { color: #15803d; font-weight: 700; }
+.type-tag { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; color: #475569; }
+
+.res-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.res-card p { font-size: 0.88rem; color: #64748b; margin-bottom: 16px; }
+
+.res-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #86efac;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.res-link:hover { background: #dcfce7; }
